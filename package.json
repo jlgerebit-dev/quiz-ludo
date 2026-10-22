@@ -1,7 +1,8 @@
 {
-  "name": "your-game-api",
+  "name": "quiz-ludo-api",
   "version": "1.0.0",
-  "description": "CHANGE_ME - one sentence about your game (CS 313 Software Engineering 1)",
+  "description": "Quiz Ludo backend API (CS313 Software Engineering 1 - Group 10 - Section 3-1)",
+  "private": true,
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
@@ -10,8 +11,9 @@
     "db:migrate": "sequelize-cli db:migrate",
     "db:migrate:status": "sequelize-cli db:migrate:status",
     "db:migrate:undo": "sequelize-cli db:migrate:undo",
+    "db:migrate:undo:all": "sequelize-cli db:migrate:undo:all",
     "db:seed": "sequelize-cli db:seed:all",
-    "db:seed:undo": "sequelize-cli db:seed:undo:all",
+    "db:seed:undo:all": "sequelize-cli db:seed:undo:all",
     "db:reset": "node scripts/db-wipe.js && sequelize-cli db:migrate && sequelize-cli db:seed:all",
     "db:check": "node scripts/db-check.js",
     "check": "node scripts/ci-check.js"
@@ -19,7 +21,7 @@
   "engines": {
     "node": ">=22"
   },
-  "author": "CHANGE_ME - your full name",
+  "author": "John Llyod Gerebit <gerebitjl@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^18.0.7",

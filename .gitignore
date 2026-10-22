@@ -6,8 +6,10 @@ node_modules/
 
 # editor and OS noise
 .vscode/
+.idea/
 .DS_Store
 Thumbs.db
 
 # logs
 *.log
+npm-debug.log*
